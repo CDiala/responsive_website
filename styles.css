@@ -371,10 +371,10 @@ div.nav-bar {
   div.hero-background {
     display: inline-block; /*apply this*/
     padding: 3rem;
+    padding-bottom: 0;
   }
 
   div.background {
-    /* display: block; */
     margin: auto;
     width: 90%; /*apply this*/
     padding: 15px 25px;
@@ -389,23 +389,59 @@ div.nav-bar {
   div.background h4 {
     padding-bottom: 0.5rem;
     padding-top: 1rem;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   div.hero-background-pos {
     float: right; /*apply this*/
-    /* left: 78%; */
     left: 35px;
     top: -170px;
     width: 114px;
     height: 114px;
     position: relative;
-    /* top: 5px;
-    left: 5px; */
+  }
+
+  /* snapshot team */
+  div.snapshot-team {
+    padding: 0 3rem;
+  }
+
+  div.snapshot-team h2 {
+    /* font-size: 1.5rem; */
+  }
+
+  div.snapshot-team p {
+    /* font-size: 1rem; */
+    padding-top: 0.8rem;
   }
 
   /* snapshot box */
+  div.snapshot-box {
+    padding-top: 1rem;
+    padding-bottom: 48px;
+  }
+
   div.snapshot-box-content {
     flex-direction: column;
+  }
+
+  div.box1,
+  div.box3 {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  div.gallery-img {
+    padding-top: 26px;
+  }
+
+  div.img {
+    margin: 20px;
+  }
+
+  div.gallery-section {
+    padding-top: 48px;
+    padding-bottom: 28px;
   }
 }
