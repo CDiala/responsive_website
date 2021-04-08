@@ -427,9 +427,22 @@ div.nav-bar {
 
   div.box1,
   div.box3 {
+    background: #fff;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+    transition: box-shadow 0.15s, background 0.5s;
+  }
+
+  div.box1:hover,
+  div.box3:hover {
+    box-shadow: 0 0 3px 5px rgb(135 135 135 / 40%);
+    background: rgb(71, 71, 71);
+  }
+
+  div.box1:hover h5,
+  div.box3:hover h5 {
+    color: #fff;
   }
 
   div.gallery-img {
@@ -437,11 +450,80 @@ div.nav-bar {
   }
 
   div.img {
+    outline: none;
     margin: 20px;
+    transition: transform 0.25s, opacity 0.2s;
+  }
+
+  div.img img {
+    border-radius: 10px;
+  }
+
+  div.gallery-img > div:nth-child(2) div.img:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  div.img:hover {
+    opacity: 0.5;
+    transform: scale(1.04);
   }
 
   div.gallery-section {
     padding-top: 48px;
     padding-bottom: 28px;
+  }
+
+  /* footer section */
+  div.footer-content,
+  div.footer-input,
+  div.footer-textarea {
+    padding: 2.5rem 1rem 0;
+  }
+
+  .footer-btn,
+  div.footer-input,
+  div.footer-textarea {
+    margin: auto;
+    display: block;
+    width: 80%;
+  }
+
+  div.footer-input *,
+  div.footer-textarea * {
+    width: 100%;
+  }
+
+  div.footer-textarea {
+    padding-top: 0;
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    margin: 0 0 2rem 0;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    border-radius: 8px;
+  }
+
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  div.footer-textarea textarea:focus {
+    border: 1px solid rgb(70, 192, 223);
+    box-shadow: 0 0 1px 2px rgb(70, 192, 223);
+  }
+
+  div.footer-btn a,
+  div.hero-content-btn a {
+    border-radius: 25px;
+    padding: 13px 6%;
+  }
+
+  div.footer-btn a:hover,
+  div.hero-content-btn a:hover {
+    background-color: #d14b61;
+    color: #fff;
   }
 }
