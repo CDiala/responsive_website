@@ -345,7 +345,7 @@ div.footer h6 {
   padding-top: 6rem;
 }
 
-/* Buzz edit */
+/*********** Buzz edit ************/
 
 /* insert hamburger */
 .nav__menu {
@@ -413,6 +413,54 @@ div.hero-background {
     width: 104px;
     height: 104px;
     position: relative;
+  }
+
+  div.snapshot-team {
+    margin-top: -2rem;
+    padding: 0 1.8rem;
+  }
+
+  div.snapshot-team h2,
+  div.snapshot-team p {
+    letter-spacing: 0;
+    word-spacing: 2px;
+  }
+
+  /*snapshot-box*/
+  div.snapshot-box {
+    padding: 4rem 3rem;
+  }
+
+  div.snapshot-box-content {
+    flex-direction: column;
+  }
+
+  div.box1,
+  div.box3 {
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 220px;
+    min-height: 230px;
+    padding: 10px;
+    transition: box-shadow 0.15s, background 0.5s;
+    width: 45vw;
+  }
+
+  div.box1 h5,
+  div.box3 h5 {
+    font-size: 1.2rem;
+  }
+
+  div.box1:hover,
+  div.box3:hover {
+    box-shadow: 0 0 3px 5px rgb(135 135 135 / 40%);
+    background: rgb(71, 71, 71);
+  }
+
+  div.box1:hover h5,
+  div.box3:hover h5 {
+    color: #fff;
   }
 }
 
@@ -607,6 +655,55 @@ div.hero-background {
     padding-right: 15px;
     word-spacing: 1px; */
   }
+
+  div.snapshot-team {
+    margin-top: -2rem;
+    padding: 0 1.8rem;
+  }
+
+  div.snapshot-team h2,
+  div.snapshot-team p {
+    letter-spacing: 0;
+    word-spacing: 2px;
+  }
+
+  /*snapshot-box*/
+  div.snapshot-box {
+    padding: 4rem 2rem;
+  }
+
+  div.snapshot-box-content {
+    flex-direction: row;
+  }
+
+  div.box1,
+  div.box3 {
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    margin: 20px;
+    min-width: 25vw;
+    max-width: 28vw;
+    /* min-height: 230px; */
+    /* padding: 10px; */
+    /* transition: box-shadow 0.15s, background 0.5s; */
+    /* width: 45vw; */
+  }
+
+  div.box1 h5,
+  div.box3 h5 {
+    font-size: 1.2rem;
+  }
+
+  div.box1:hover,
+  div.box3:hover {
+    box-shadow: 0 0 3px 5px rgb(135 135 135 / 40%);
+    background: rgb(71, 71, 71);
+  }
+
+  div.box1:hover h5,
+  div.box3:hover h5 {
+    color: #fff;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -643,5 +740,5 @@ div.hero-background {
 
 /* div.hero-background-pos, */
 div.snapshot-box {
-  display: none;
+  /* display: none; */
 }
