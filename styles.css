@@ -373,10 +373,18 @@ div.nav-bar {
     padding: 1rem 2rem;
   }
 
-  /*  */
+  /* hero section */
+  div.hero-section {
+    padding: 4rem;
+  }
+
+  div.hero-content-heading h3 {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 426px) {
+  /* navbar */
   ul.nav-links {
     align-items: center;
     display: flex;
@@ -385,11 +393,36 @@ div.nav-bar {
   }
 
   div.nav-bar {
-    padding: 1rem 4rem;
+    padding: 1.5rem 4rem;
   }
 
   .nav__menu {
     display: none;
+  }
+
+  /* hero section */
+  div.hero-section {
+    padding: 5rem;
+  }
+
+  /* div.hero-content-heading h3 {
+      font-size: 1.8rem;
+    } */
+}
+
+@media screen and (min-width: 1025px) {
+  /* hero */
+  div.hero-content-heading h3 {
+    font-size: 3rem;
+  }
+
+  div.hero-content-heading p {
+    font-size: 1.5rem;
+  }
+
+  /* hero button */
+  div.hero-content-btn a {
+    font-size: 1.2rem;
   }
 }
 
