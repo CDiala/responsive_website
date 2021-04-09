@@ -361,7 +361,106 @@ div.nav-bar {
   width: 100%;
 }
 
+/*adjust hero-background*/
+div.hero-background {
+  width: 100%;
+}
+
 /* mobile size */
+@media screen and (min-width: 0px) {
+  /* hero section */
+  div.hero-section {
+    padding: 5rem;
+  }
+
+  /* hero background section */
+  div.hero-background {
+    display: inline-block;
+    padding: 3rem 0;
+    padding-bottom: 0;
+  }
+
+  div.background {
+    margin: auto;
+    width: 70%;
+    padding: 15px 14px;
+    padding-right: 60px;
+  }
+
+  div.background h4,
+  div.background p {
+    padding-left: 0.5rem;
+  }
+
+  div.background p {
+    font-size: 68%;
+    letter-spacing: 0;
+    padding-right: 15px;
+    word-spacing: 1px;
+  }
+
+  div.background h4 {
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+
+  div.hero-background-pos {
+    float: right; /*apply this*/
+    left: -20%;
+    margin-right: -52px;
+    top: -170px;
+    width: 104px;
+    height: 104px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* hero background section */
+  div.hero-background {
+    display: inline-block;
+    padding: 3rem 0;
+    padding-bottom: 0;
+    width: 100%; /*new*/
+  }
+
+  /* div.background {
+    margin: auto;
+    width: 70%;
+    padding: 15px 14px;
+    padding-right: 60px;
+  } */
+
+  /* div.background h4,
+  div.background p {
+    padding-left: 0.5rem;
+  } */
+
+  div.background p {
+    /* font-size: 68%; */
+    /* letter-spacing: 0; */
+    padding-right: 5px;
+    /* word-spacing: 1px; */
+  }
+
+  div.background h4 {
+    font-size: 0.89rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+
+  div.hero-background-pos {
+    float: right; /*apply this*/
+    left: -20%;
+    margin-right: -52px;
+    top: -170px;
+    width: 94px;
+    height: 94px;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 425px) {
   /* navbar */
   ul.nav-links {
@@ -403,23 +502,23 @@ div.nav-bar {
   div.background p {
     font-size: 68%;
     letter-spacing: 0;
+    padding-right: 15px;
     word-spacing: 1px;
   }
 
   div.background h4 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    /* font-size: 1.5rem; */
+    padding-top: 0;
   }
 
   div.hero-background-pos {
     float: right; /*apply this*/
-    left: -5%;
-    margin-right: -57px;
-    top: -170px;
-    width: 114px;
-    height: 114px;
+    left: -15%;
+    margin-right: -45px;
+    top: -165px;
+    width: 90px;
+    height: 90px;
     position: relative;
   }
 }
@@ -442,6 +541,48 @@ div.nav-bar {
   div.hero-section {
     padding: 5rem;
   }
+
+  /* hero background section */
+  div.hero-background {
+    display: inline-block;
+    padding: 3rem;
+    padding-bottom: 0;
+  }
+
+  div.background {
+    margin: auto;
+    width: 70%;
+    padding: 15px 14px;
+    padding-right: 60px;
+  }
+
+  div.background h4,
+  div.background p {
+    padding-left: 0.5rem;
+  }
+
+  div.background p {
+    font-size: 68%;
+    letter-spacing: 0;
+    padding-right: 15px;
+    word-spacing: 1px;
+  }
+
+  div.background h4 {
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+
+  div.hero-background-pos {
+    float: right; /*apply this*/
+    left: -20%;
+    margin-right: -52px;
+    top: -170px;
+    width: 104px;
+    height: 104px;
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -453,6 +594,18 @@ div.nav-bar {
 
   .nav__menu {
     display: none;
+  }
+
+  /* hero */
+  div.background {
+    width: 60%;
+  }
+
+  div.background p {
+    font-size: 1rem;
+    /* letter-spacing: 0;
+    padding-right: 15px;
+    word-spacing: 1px; */
   }
 }
 
@@ -470,9 +623,25 @@ div.nav-bar {
   div.hero-content-btn a {
     font-size: 1.2rem;
   }
+
+  /*hero-background*/
+  div.background {
+    max-width: 55%;
+  }
+
+  /*hero-background-pos*/
+  div.hero-background-pos {
+    float: right; /*apply this*/
+    left: -22%;
+    margin-right: -52px;
+    top: -170px;
+    width: 114px;
+    height: 114px;
+    position: relative;
+  }
 }
 
-div.hero-background-pos,
+/* div.hero-background-pos, */
 div.snapshot-box {
   display: none;
 }
