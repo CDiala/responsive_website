@@ -345,185 +345,55 @@ div.footer h6 {
   padding-top: 6rem;
 }
 
-div.nav-bar {
-  width: 100%;
+/* Buzz edit */
+
+/* insert hamburger */
+.nav__menu {
+  fill: #aec3c7;
+  height: inherit;
+  width: 30px;
 }
 
-/* mobile screens */
-@media screen and (max-width: 687px) {
+/* nav-bar */
+div.nav-bar {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* mobile size */
+@media screen and (max-width: 425px) {
   /* navbar */
-  div.nav-bar {
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-
-  ul li {
-    margin: 0 0 0 1.4rem;
-  }
-
-  /* hero section*/
-  div.hero-section {
-    padding: 3rem;
-  }
-
-  /* hero background */
-  div.hero-background {
-    display: inline-block; /*apply this*/
-    padding: 3rem;
-    padding-bottom: 0;
-  }
-
-  div.background {
-    margin: auto;
-    width: 90%; /*apply this*/
-    padding: 15px 25px;
-    padding-right: 60px;
-  }
-
-  div.background h4,
-  div.background p {
-    padding-left: 0.5rem;
-  }
-
-  div.background h4 {
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
-    /* font-size: 1.5rem; */
-  }
-
-  div.hero-background-pos {
-    float: right; /*apply this*/
-    left: 35px;
-    top: -170px;
-    width: 114px;
-    height: 114px;
-    position: relative;
-  }
-
-  /* snapshot team */
-  div.snapshot-team {
-    padding: 0 3rem;
-  }
-
-  div.snapshot-team h2 {
-    /* font-size: 1.5rem; */
-  }
-
-  div.snapshot-team p {
-    /* font-size: 1rem; */
-    padding-top: 0.8rem;
-  }
-
-  /* snapshot box */
-  div.snapshot-box {
-    padding-top: 1rem;
-    padding-bottom: 48px;
-  }
-
-  div.snapshot-box-content {
+  ul.nav-links {
+    display: none;
     flex-direction: column;
-  }
-
-  div.box1,
-  div.box3 {
-    background: #fff;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    transition: box-shadow 0.15s, background 0.5s;
-  }
-
-  div.box1:hover,
-  div.box3:hover {
-    box-shadow: 0 0 3px 5px rgb(135 135 135 / 40%);
-    background: rgb(71, 71, 71);
-  }
-
-  div.box1:hover h5,
-  div.box3:hover h5 {
-    color: #fff;
-  }
-
-  div.gallery-img {
-    padding-top: 26px;
-  }
-
-  div.img {
-    outline: none;
-    margin: 20px;
-    transition: transform 0.25s, opacity 0.2s;
-  }
-
-  div.img img {
-    border-radius: 10px;
-  }
-
-  div.gallery-img > div:nth-child(2) div.img:nth-of-type(1) {
-    margin-top: 0;
-  }
-
-  div.img:hover {
-    opacity: 0.5;
-    transform: scale(1.04);
-  }
-
-  div.gallery-section {
-    padding-top: 48px;
-    padding-bottom: 28px;
-  }
-
-  /* footer section */
-  div.footer-content,
-  div.footer-input,
-  div.footer-textarea {
-    padding: 2.5rem 1rem 0;
-  }
-
-  .footer-btn,
-  div.footer-input,
-  div.footer-textarea {
-    margin: auto;
-    display: block;
-    width: 80%;
-  }
-
-  div.footer-input *,
-  div.footer-textarea * {
     width: 100%;
   }
 
-  div.footer-textarea {
-    padding-top: 0;
+  div.nav-bar {
+    padding: 1rem 2rem;
   }
 
-  input[type="email"],
-  input[type="text"] {
-    margin: 0 0 2rem 0;
+  /*  */
+}
+
+@media screen and (min-width: 426px) {
+  ul.nav-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
   }
 
-  input[type="email"],
-  input[type="text"],
-  textarea {
-    border-radius: 8px;
+  div.nav-bar {
+    padding: 1rem 4rem;
   }
 
-  input[type="email"]:focus,
-  input[type="text"]:focus,
-  div.footer-textarea textarea:focus {
-    border: 1px solid rgb(70, 192, 223);
-    box-shadow: 0 0 1px 2px rgb(70, 192, 223);
+  .nav__menu {
+    display: none;
   }
+}
 
-  div.footer-btn a,
-  div.hero-content-btn a {
-    border-radius: 25px;
-    padding: 13px 6%;
-  }
-
-  div.footer-btn a:hover,
-  div.hero-content-btn a:hover {
-    background-color: #d14b61;
-    color: #fff;
-  }
+div.hero-background-pos,
+div.snapshot-box {
+  display: none;
 }
