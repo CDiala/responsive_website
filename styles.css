@@ -400,6 +400,7 @@ div.gallery-img {
   ul li a:hover {
     background: none;
     color: #fff;
+    padding: 0;
     /* transform: scale(5); */
     /* border-radius: 3px; */
   }
@@ -810,6 +811,8 @@ div.gallery-img {
 
   ul.nav-links li {
     margin-top: 0;
+    border-bottom: none;
+    padding: 0;
   }
 
   /* hero */
