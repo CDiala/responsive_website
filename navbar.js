@@ -15,7 +15,9 @@ menuIcon.addEventListener("click", () => {
 
 navLinks.forEach(item => {
     item.addEventListener("click", () => {
-        navList.classList.toggle("collapsible--expanded");
+        if (navList.classList.contains("collapsible--expanded")) {
+            navList.classList.toggle("collapsible--expanded");
+        }
     })
 })
 
