@@ -416,7 +416,9 @@ div.gallery-img {
   }
 
   ul.nav-links li {
-    margin-top: 10px;
+    border-bottom: 2px solid #d4c0c059;
+    margin-top: 20px;
+    padding: 0 0 15px;
   }
   /* hero section */
   div.hero-section {
