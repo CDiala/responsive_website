@@ -347,11 +347,22 @@ div.footer h6 {
 
 /*********** Buzz edit ************/
 
+/* logo */
+div.logo:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 /* insert hamburger */
-.nav__menu {
+svg.nav__menu {
+  cursor: pointer;
   fill: #aec3c7;
   height: inherit;
-  width: 30px;
+  /* width: 30px; */
+}
+
+div.menu-icon:hover svg.nav__menu {
+  fill: #fff;
 }
 
 /* nav-bar */
@@ -366,11 +377,63 @@ div.hero-background {
   width: 100%;
 }
 
+/* adjust gallery-img */
+div.gallery-img {
+  padding-top: 1.5rem;
+}
+
 /* mobile size */
 @media screen and (min-width: 0px) {
+  /*nav*/
+  ul.nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  ul li a {
+    /* border: none; */
+    padding: 0;
+    transition: all 0.15s;
+  }
+
+  ul li a:hover {
+    background: none;
+    color: #fff;
+    /* transform: scale(5); */
+    /* border-radius: 3px; */
+  }
+
+  ul li:hover {
+    /* background: none; */
+    /* color: #fff; */
+    transform: scale(1.1);
+    /* border-radius: 3px; */
+  }
+
+  .nav-links.collapsible--expanded {
+    display: flex;
+  }
+
+  ul.nav-links li {
+    margin-top: 10px;
+  }
   /* hero section */
   div.hero-section {
     padding: 5rem;
+  }
+
+  div.hero-content-btn a,
+  div.footer-btn a {
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+
+  div.hero-content-btn a:hover,
+  div.footer-btn a:hover {
+    color: #fff;
+    background-color: rgb(218, 42, 42);
+    transform: scale(1.05);
   }
 
   /* hero background section */
@@ -428,7 +491,7 @@ div.hero-background {
 
   /*snapshot-box*/
   div.snapshot-box {
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
   }
 
   div.snapshot-box-content {
@@ -460,6 +523,104 @@ div.hero-background {
 
   div.box1:hover h5,
   div.box3:hover h5 {
+    color: #fff;
+  }
+
+  div.gallery-img {
+    padding-top: 26px;
+  }
+
+  div.gallery-img > div {
+    align-items: center; /*add this*/
+    display: flex; /*add this*/
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /*add this*/
+  }
+
+  div.img {
+    outline: none;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.25s, opacity 0.2s;
+  }
+
+  div.img img {
+    border-radius: 10px;
+    height: inherit;
+    width: 70%;
+  }
+
+  div.img:hover {
+    opacity: 0.5;
+    transform: scale(1.04);
+  }
+
+  div.gallery-section {
+    padding: 48px 2rem 28px; /*add this*/
+    /* padding-top: 48px;
+    padding-bottom: 28px; */
+  }
+
+  div.gallery-content h4 {
+    font-size: 1.4rem;
+  }
+
+  div.gallery-content p {
+    font-size: 1rem;
+    /* margin: auto;
+    width: 90%; */
+  }
+
+  /* footer section */
+  div.footer-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .footer-btn,
+  div.footer-input,
+  div.footer-textarea {
+    margin: auto;
+    display: block;
+    width: 90%;
+  }
+
+  div.footer-input *,
+  div.footer-textarea * {
+    width: 100%;
+  }
+
+  div.footer-textarea {
+    padding-top: 0;
+  }
+
+  input[type="email"],
+  input[type="text"] {
+    margin: 0 0 1rem 0;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    border-radius: 4px;
+  }
+
+  input[type="email"]:focus,
+  input[type="text"]:focus,
+  div.footer-textarea textarea:focus {
+    border: 1px solid rgb(70, 192, 223);
+    box-shadow: 0 0 1px 2px rgb(70, 192, 223);
+  }
+
+  div.footer-btn a,
+  div.hero-content-btn a {
+    border-radius: 25px;
+    padding: 13px 6%;
+  }
+
+  div.footer-btn a:hover,
+  div.hero-content-btn a:hover {
+    background-color: #d14b61;
     color: #fff;
   }
 }
@@ -578,7 +739,7 @@ div.hero-background {
   }
 
   div.nav-bar {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 2rem;
   }
 
   .nav__menu {
@@ -638,10 +799,15 @@ div.hero-background {
   ul.nav-links {
     display: flex;
     flex-direction: row;
+    width: auto;
   }
 
   .nav__menu {
     display: none;
+  }
+
+  ul.nav-links li {
+    margin-top: 0;
   }
 
   /* hero */
@@ -669,7 +835,7 @@ div.hero-background {
 
   /*snapshot-box*/
   div.snapshot-box {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 
   div.snapshot-box-content {
@@ -704,6 +870,31 @@ div.hero-background {
   div.box3:hover h5 {
     color: #fff;
   }
+
+  div.gallery-img {
+    padding-top: 26px;
+  }
+
+  div.gallery-img > div {
+    flex-direction: row;
+    margin-bottom: 6%;
+    max-width: 80%;
+    width: 90%;
+  }
+
+  div.img {
+    margin: 0;
+  }
+
+  div.img img {
+    width: 70%;
+  }
+
+  div.footer-btn,
+  div.footer-input,
+  div.footer-textarea {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -736,9 +927,4 @@ div.hero-background {
     height: 114px;
     position: relative;
   }
-}
-
-/* div.hero-background-pos, */
-div.snapshot-box {
-  /* display: none; */
 }
