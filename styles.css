@@ -99,7 +99,8 @@ div.background {
   background: #fff;
   box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
   padding: 15px 40px;
-  width: 550px;
+  /* width: 550px; */
+  width: 60%;
   height: 220px;
   position: relative;
 }
@@ -448,7 +449,7 @@ div.gallery-img {
 
   div.background {
     margin: auto;
-    width: 70%;
+    /* width: 70%; */
     padding: 15px 14px;
     padding-right: 60px;
   }
@@ -763,7 +764,7 @@ div.gallery-img {
 
   div.background {
     margin: auto;
-    width: 70%;
+    /* width: 70%; */
     padding: 15px 14px;
     padding-right: 60px;
   }
